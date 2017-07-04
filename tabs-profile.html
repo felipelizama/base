@@ -1,0 +1,116 @@
+<!-- Nav tabs -->
+<button type="submit" class="btn btn-primary right">Editar</button>
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><strong>Datos Personales</strong></a></li>
+  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Formulario de Salud</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="home">
+    <table class="striped table table-bordered">
+      <tbody class="col s6" style="padding: 0px;">
+        <tr>
+          <td>Rut/ Pasaporte:</td>
+          <td>182985590</td>
+        </tr>
+        <tr>
+          <td>Fecha de Nacimiento:</td>
+          <td>26-02-1989</td>
+        </tr>
+        <tr>
+          <td>Sexo</td>
+          <td>Masculino</td>
+        </tr>
+        <tr>
+          <td>Estado Civil</td>
+          <td>
+            <select class="form-control" id="disabledInput">
+              <option>Soltero</option>
+              <option>Casado</option>
+              <option>Viudo</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td>nombre.profesor@gmail.com</td>
+        </tr>
+      </tbody>
+      <tbody class="col s6" style="padding: 0px;">
+        <tr>
+          <td>Nacionalidad  </td>
+          <td>Chileno</td>
+        </tr>
+        <tr>
+          <td>Edad</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>celular </td>
+          <td>555 5555</td>
+        </tr>
+        <tr>
+          <td>Usuario Fen </td>
+          <td>nombre.profesor</td>
+        </tr>
+      </tbody>
+    </table>
+    <th class="blue-text">Domicilio <small>Última Actualización: 00/00/0000</small></th>
+    <div class="table-responsive">
+    <table class="striped table table-bordered">
+      <thead>
+        <tr>
+            <th>Dirección</th>
+            <th>Departamento</th>
+            <th>Comuna</th>
+            <th>Región</th>
+            <th>País</th>
+            <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>San Diego 255</td>
+          <td>205</td>
+          <td>Santiago</td>
+          <td>Región Metropolitana</td>
+          <td>Chile</td>
+          <td>2 2225555</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile">
+  <table class="striped table table-bordered">
+    <tbody class="col s6" style="padding: 0px;">
+      <tr>
+        <td>Previsión Médica:</td>
+        <td>FONASA</td>
+      </tr>
+      <tr>
+        <td>En Caso de Emergencia llamar a:</td>
+        <td>Karen Cartes, telefono: 56 9 77886600</td>
+      </tr>
+      <tr>
+        <td>En Caso de Accidente trasladar a:</td>
+        <td>Clínica Indisa</td>
+      </tr>
+     
+      <tr>
+        <td>Antecedentes Médicos</td>
+        <td>N/A</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+ <script type="text/javascript">
+    $( document ).ready(function() {
+        $('#myTabs a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+    });
+    </script>

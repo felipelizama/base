@@ -1,0 +1,158 @@
+
+/*=====================================================
+=            Bootstrap 2.3.2 Media Queries            =
+=====================================================*/
+@media only screen and (min-width : 1200px) {
+  .movil {
+    display: none;
+    visibility: hidden;
+  }
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: none;
+  }
+}
+/*@media only screen and (max-width : 1200px) {
+  .movil {
+    display: none;
+    visibility: hidden;
+  }
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: none;
+  }
+}*/
+
+@media only screen and (min-width : 979px) {
+  .movil {
+    display: none;
+    visibility: hidden;
+  }
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: none;
+  }
+}
+
+@media only screen and (min-width : 767px) {
+  .movil {
+    display: none;
+    visibility: hidden;
+  }
+  .navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: none;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .menu-desktop {
+    display: none;
+    visibility: hidden;
+  }
+
+  .desktop {
+    display: none;
+    visibility: hidden;
+  }
+  .list-group-item {
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* height: 100%; */
+    padding-bottom: 30px !important;
+    display: inherit;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    /* float: right; */
+    background-color: white !important;
+    width: 100%;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .menu-desktop {
+    display: none;
+    visibility: hidden;
+  }
+
+  .desktop {
+    display: none;
+    visibility: hidden;
+  }
+  .list-group-item {
+    position: relative;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* height: 100%; */
+    padding-bottom: 30px !important;
+    display: inherit;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    /* float: right; */
+    background-color: white !important;
+    width: 100%;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
+}
+
+
+
+
+/*BASE CSS*/
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: none;
+}
+
+body {
+  overflow-x:hidden !important;
+}
+.red {
+  color: red;
+}
+.container {
+     /* padding-top: 20px;*/
+}
+
+.p1  { padding: .5rem }
+.mb1 { margin-bottom: .5rem }
+.navy  { color: #001f3f }
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+.table-class {
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.inline {
+  display: inline-flex;
+}

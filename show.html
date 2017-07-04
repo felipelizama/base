@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Prototipo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+     <link rel="stylesheet" href="fen-icons.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default"><!-- navbar --></nav>
+    </br>
+    <div class="container">
+      <!-- MIS CLASES -->
+      <div id="misclases">
+      <div class="col-md-12">
+          <div class="row">
+              <div class="col-md-12">
+                <ol class="breadcrumb">
+                  <li><a href="index.html">Mis Clases</a></li>
+                  <li><a href="class-detail.html">Gestión y Empresa</a></li>
+                  <li class="active">Show element</li>
+                </ol>
+              </div>
+             <!--  <div class="col-md-4">
+                  <select class="form-control">
+                      <option>Filtrar por Tema:</option>
+                      <option>Avisos</option>
+                      <option>Tareas</option>
+                      <option>Descargas</option>
+                      <option>Publicaciones</option>
+                    </select>
+              </div> -->
+          </div>
+          </br>
+      </div>
+      <div class="col-md-12">
+         <!-- 01 -->
+        <div class="jumbotron">
+          <div class="container">
+              <span class="card-title">Publicación 1: New Economic Thinking</span>
+              <p>por Oscar Landerretche</p>
+              <p>30/05/2017</p>
+              <p>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in varius arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam massa ex, tincidunt faucibus porttitor vel, faucibus ut odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer tristique est sed arcu tincidunt, non mattis purus volutpat. Fusce sollicitudin rhoncus nisi, at posuere enim. Quisque bibendum auctor augue et sollicitudin. Vivamus ut nisi eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+            </div>
+            </br>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/iLUD1Kc-0Yg" frameborder="0" allowfullscreen></iframe>    
+        </div>
+      </div>
+     
+</div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+  
+      $('body').hide();
+        $("nav").load("nav.html");
+        $('body').fadeIn(200,function(){
+          $('body').removeClass("hidden");
+        });
+        // $(".seenav-tab").click(function(e){
+        //   let $elemento = $($(this).attr("href"));
+        //   let $hijos = $elemento.parent().children();
+        //   let $p = $(".seenav-tab").parent().children();
+
+        //   $hijos.addClass("hidden");
+        //   $p.removeClass("activo");
+
+        //   $(this).addClass("activo");
+        //   $elemento.removeClass("hidden");
+        // });
+    });
+    </script>
+  </body>
+</html>

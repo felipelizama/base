@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Prototipo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/multi-select.css">
+    <link href="css/base.css" rel="stylesheet">
+     <link rel="stylesheet" href="fen-icons.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default"><!-- navbar --></nav>
+    </br>
+    <div class="container jumbotron">
+       <div id="tabs-tomaramos" class="container"><!-- contenido load --></div>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.multi-select.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+  
+      $('body').hide();
+        $("nav").load("nav.html");
+        $("#tabs-tomaramos").load("show-tomaramos.html");
+        $('body').fadeIn(200,function(){
+          $('body').removeClass("hidden");
+        });
+        // $(".seenav-tab").click(function(e){
+        //   let $elemento = $($(this).attr("href"));
+        //   let $hijos = $elemento.parent().children();
+        //   let $p = $(".seenav-tab").parent().children();
+
+        //   $hijos.addClass("hidden");
+        //   $p.removeClass("activo");
+
+        //   $(this).addClass("activo");
+        //   $elemento.removeClass("hidden");
+        // });
+        $('#myTabs a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+    });
+    </script>
+  </body>
+</html>

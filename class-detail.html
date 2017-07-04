@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Prototipo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/navbar-fixed-top.css" rel="stylesheet"> -->
+    <link href="css/media-queries.css" rel="stylesheet">
+    <!-- Propeller css -->
+    <link href="css/propeller.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+     <link rel="stylesheet" href="fen-icons.css">
+  </head>
+  <body>
+    <style type="text/css">
+      .tab-content>.active {
+      display: grid;
+      }
+    </style>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default"><!-- navbar --></nav>
+    </br>
+    <div class="container">
+      <!-- MIS CLASES -->
+     <!--  <div id="misclases">
+      <div class="col-md-12">
+          <div class="row">
+              <div class="col-md-8">
+                <ol class="breadcrumb">
+                  <li><a href="index.html">Mis Clases</a></li>
+                  <li class="active">Gestión y Empresa</li>
+                </ol>
+              </div>
+              <div class="col-md-4">
+                  <select class="form-control">
+                      <option>Filtrar por Tema:</option>
+                      <option>Avisos</option>
+                      <option>Tareas</option>
+                      <option>Descargas</option>
+                      <option>Publicaciones</option>
+                    </select>
+              </div>
+          </div>
+          </br>
+      </div>
+      <div class="col-md-12">
+      <ul class="list-group">
+        <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <a href="show.html">Tarea 1</a><small>publicada por Cesar Lopez</small>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+        <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <a href="show.html">Quiz 1</a><small>publicada por Cesar Lopez</small>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+        <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <a href="show.html">El curso Economia I comienza en 5 días</a>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+         <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <small>Nueva Actividad Docente</small><a href="task-show.html"> Diplomado en emprendimiento e innovación del departamento Unegocios.</a>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+        <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <a href="show.html">Publicación 1</a><small> publicada por Jhon Doe</small>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+        <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <a href="https://docs.google.com/spreadsheets/d/1brFbJNDxnl7YQrJbphjj4ghMfX26VEv6b7eBpyj4Cc8/edit?usp=sharing">Hoja de Cálculo 1</a><small> publicada por Jhon Doe</small>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+         <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <a href="img/example.pdf">PDF 1</a><small> publicada por Jhon Doe</small>
+          <i class="glyphicon glyphicon-blackboard right"></i>
+        </li>
+
+        <li class="list-group-item avatar" align="center">
+          <i class="glyphicon glyphicon-option-horizontal center"></i>
+        </li>
+      </ul> -->
+      <div id="tabs-class-detail"></div>
+
+      <!-- Floating Action Button like Google Material -->
+      <div class="menu pmd-floating-action"  role="navigation"> 
+      
+        <a href="create-tarea.html" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Tarea"> 
+          <span class="pmd-floating-hidden">Tarea</span> 
+          <i class="glyphicon glyphicon-pushpin"></i>
+        </a> 
+        
+        <a href="create-avisos.html" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Avisos"> 
+          <span class="pmd-floating-hidden">Avisos</span> 
+          <i class="glyphicon glyphicon-comment"></i>
+        </a> 
+        <a href="create-publicacion.html" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Publicacion"> 
+          <span class="pmd-floating-hidden">Publicacion</span> 
+          <i class="glyphicon glyphicon-pencil"></i>
+        </a>
+        <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" data-title="Crear" href="javascript:void(0);"> 
+          <span class="pmd-floating-hidden">Primary</span>
+          <i class="glyphicon glyphicon-plus"></i> 
+        </a> 
+      </div>
+</div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="js/propeller.min.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+  
+      $('body').hide();
+        $("nav").load("nav.html");
+        $("#tabs-class-detail").load("tabs-class-detail-2.html");
+        $('body').fadeIn(200,function(){
+          $('body').removeClass("hidden");
+        });
+        // $(".seenav-tab").click(function(e){
+        //   let $elemento = $($(this).attr("href"));
+        //   let $hijos = $elemento.parent().children();
+        //   let $p = $(".seenav-tab").parent().children();
+
+        //   $hijos.addClass("hidden");
+        //   $p.removeClass("activo");
+
+        //   $(this).addClass("activo");
+        //   $elemento.removeClass("hidden");
+        // });
+    });
+    </script>
+  </body>
+</html>

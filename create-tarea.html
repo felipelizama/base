@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Prototipo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-tagsinput.css"> -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/multi-select.css">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/propeller.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="fen-icons.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default"><!-- navbar --></nav>
+    </br>
+    <div class="container jumbotron">
+       <form class="container jumbotron">
+          <h3>Crear Tarea</h3>
+          <!-- mail form -->
+        <div class="panel-body message">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+              <label for="to">Para:</label></br>
+             
+              <label><input type="checkbox"> Curso 1 / Sección A</label></br>
+              <label><input type="checkbox"> Curso 1 / Sección B</label></br>
+              <label><input type="checkbox"> Curso 2 / Sección A</label></br>
+              <label><input type="checkbox"> Curso 2 / Sección B</label>
+              </br>
+           
+          </div>
+        </form>
+          <!-- fin mail form -->
+         <!--  <select class="form-control">
+              <label class="col-sm-1 col-md-1">Clase:</label>
+              <div class="col-sm-11 col-md-11">
+              <option class="disable">Gestión y Empresa</option>
+              <option>Gestión y Empresa</option>
+              <option>Métodos Matemáticos I</option>
+              <option>Tecnologías de la Información</option>
+              <option>Inglés I</option>
+              <option>Electivo</option>
+              </div>
+          </select> -->
+          <div class="form-group">
+            <label for="exampleInputPassword1">Titulo</label>
+            <input type="text" class="form-control" placeholder="titulo">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Texto</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+          <div class="input-group">
+            <label >Fecha de Ingreso Limite</label></br>
+            <input type="text" id="datepicker">
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputFile">Adjuntar Archivos</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+          </div>
+         
+          <button type="submit" class="btn btn-primary">Enviar Nueva Tarea</button>
+        </form>
+         <!-- Floating Action Button like Google Material -->
+      <div class="menu pmd-floating-action"  role="navigation"> 
+      
+        <a href="create-tarea.html" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Tarea"> 
+          <span class="pmd-floating-hidden">Tarea</span> 
+          <i class="glyphicon glyphicon-pushpin"></i>
+        </a> 
+        
+        <a href="create-avisos.html" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Avisos"> 
+          <span class="pmd-floating-hidden">Avisos</span> 
+          <i class="glyphicon glyphicon-comment"></i>
+        </a> 
+        <a href="create-publicacion.html" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default" data-title="Publicacion"> 
+          <span class="pmd-floating-hidden">Publicacion</span> 
+          <i class="glyphicon glyphicon-pencil"></i>
+        </a>
+        <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" data-title="Crear" href="javascript:void(0);"> 
+          <span class="pmd-floating-hidden">Primary</span>
+          <i class="glyphicon glyphicon-plus"></i> 
+        </a> 
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.multi-select.js"></script>
+   <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script> -->
+<!--     <script src="js/bootstrap-tagsinput.min.js"></script>
+    <script src="js/bootstrap-tagsinput/bootstrap-tagsinput-angular.min.js"></script> -->
+    <script type="text/javascript" src="js/propeller.min.js"></script>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+  
+      $('body').hide();
+        $("nav").load("nav.html");
+        $("#tabs-tomaramos").load("show-tomaramos.html");
+        $('body').fadeIn(200,function(){
+          $('body').removeClass("hidden");
+        });
+        // $(".seenav-tab").click(function(e){
+        //   let $elemento = $($(this).attr("href"));
+        //   let $hijos = $elemento.parent().children();
+        //   let $p = $(".seenav-tab").parent().children();
+
+        //   $hijos.addClass("hidden");
+        //   $p.removeClass("activo");
+
+        //   $(this).addClass("activo");
+        //   $elemento.removeClass("hidden");
+        // });
+        $('#myTabs a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+        })
+
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+
+        // $("input").tagsinput('items')
+    });
+    </script>
+  </body>
+</html>

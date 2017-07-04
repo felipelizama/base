@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Prototipo</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/media-queries.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+     <link rel="stylesheet" href="fen-icons.css">
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default"><!-- navbar --></nav>
+    </br>
+    <div class="container">
+      <ul class="list-group">
+
+        <li class="list-group-item avatar">
+          <span>Aún no has completado el <a href="salud.html">Formulario de Salud</a></span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+        <li class="list-group-item avatar">
+          <span>Aún no has completado tus <a href="salud.html">Datos Personales</a></span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+        <li class="list-group-item avatar">
+          <span>Nueva Actividad docente del <a href="#">Diplomado en Emprendimiento e Innovación.</a></span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+        <li class="list-group-item avatar">
+          <img class="purple circle responsive-img">
+          <span>Nueva <a href="show-tarea.html" >Tarea</a> ingresada en Métodos Matemáticos I</span></a>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+         <li class="list-group-item avatar">
+          <img class="cyan circle responsive-img">
+          <span>Nueva <a href="show.html" >Publicación</a> ingresada en Economía I</span></a>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+         <li class="list-group-item avatar">
+          <img class="amber circle responsive-img">
+          <span>Nuevo <a href="show-quiz.html" >Quiz</a> ingresada en Gestion y Empresa I</span></a>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+   
+        <li class="list-group-item avatar">
+          <span>Su <a href="#">Solicitud de Homologación</a> ha sido aprobada</span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+         <li class="list-group-item avatar">
+          <span>Su <a href="#">Solicitud de Homologación</a> ha sido aprobada</span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+         <li class="list-group-item avatar">
+          <span><a href="#">Feria Académica</a> desde las 10 am hasta </br>las 17 pm en hall central Tecno-Aulas.</span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+         <li class="list-group-item avatar">
+          <span><a href="#">Feria Académica</a> desde las 10 am hasta </br>las 17 pm en hall central Tecno-Aulas.</span>
+          <time class="media-meta right grey-text" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
+        </li>
+
+      </ul>
+   </div><!-- fin container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+    $( document ).ready(function() {
+  
+      $('body').hide();
+        $("nav").load("nav.html");
+        $("#misclases").load("misclases.html");
+        $("#pdocente").load("pdocente.html");
+        // $("#test5").load("history.html");
+        // $("#test10").load("tomaderamos.html");
+        // $("#test12").load("misnotas-alumno.html");
+        // $("#test6").load("see.html");
+        // $("#test4").load("bibliodoc.html");
+        // $("#test7").load("calendario.html");
+        // $("#test3").load("all_class.html");
+        $('body').fadeIn(200,function(){
+          $('body').removeClass("hidden");
+        });
+
+        $(".seenav-tab").click(function(e){
+          let $elemento = $($(this).attr("href"));
+          let $hijos = $elemento.parent().children();
+          let $p = $(".seenav-tab").parent().children();
+
+          $hijos.addClass("hidden");
+          $p.removeClass("activo");
+
+          $(this).addClass("activo");
+          $elemento.removeClass("hidden");
+        });
+    });
+    </script>
+  </body>
+</html>
